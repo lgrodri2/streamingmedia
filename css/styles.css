@@ -45,16 +45,18 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-/* HTML CSS rules start */
+/* HTML CSS rules start
+----------------------------------*/
 html {
     box-sizing: border-box;
+    
     background-color:#020659;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 body {
+    display: flex;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     min-width: 375px;
@@ -62,7 +64,7 @@ body {
 }
 header {
     background-image: linear-gradient(to right, #2104d9, #020659);
-    
+    float:inherit;
 }
 nav {
     
@@ -82,6 +84,13 @@ p, dl, dd {
 }
 footer p {
     font-size: .75em;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: none;
 }
 
 /* Menu Start */
