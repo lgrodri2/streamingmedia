@@ -48,14 +48,20 @@ table {
 
 /* HTML CSS rules start */
 html {
+    box-sizing: border-box;
     background-color:#020659;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
+    min-width: 375px;
+    color:#ffffff
 }
 header {
-    color:#ffffff;
+    
 }
 nav {
     
