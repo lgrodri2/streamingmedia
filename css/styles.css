@@ -61,10 +61,15 @@ body {
     color:#ffffff
 }
 header {
+    background-image: linear-gradient(to right, #2104d9, #020659);
     
 }
 nav {
     
+}
+nav a {
+    text-transform: uppercase;
+
 }
 h1 {
     font-size: 1.25em;
@@ -146,3 +151,35 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
 }
 /* Menu End*/
+
+/* Custom Styled Scroll Bar
+-----------------------------------*/
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+#trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+}
