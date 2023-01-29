@@ -45,8 +45,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/* HTML / CSS global styles
-----------------------------------*/
+/*----------------------------------*/
 html {
     box-sizing: border-box;
     
@@ -58,7 +57,8 @@ html {
 body {   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 376px;
+    min-width: 375px;
     color:#ffffff;
 }
 header {
@@ -351,6 +351,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         overflow-x: hidden;
         overflow-y: auto;
         height: 500px;
+        width: 417px;
     }
     .scrollthree {
         display: grid;
@@ -358,12 +359,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         grid-template-rows: repeat(5,1fr);
         overflow-x: hidden;
         overflow-y: auto;
-        height: 500px;
-    }
-    .scrolltwo h3 {
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-        text-align: center;
+        height: 500px;        
     }
     .scrollthree h3 {
         color: #ffffff;
@@ -380,7 +376,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
     #twocolumn {
         display:flex;
-        flex-grow: 2;
     }
     nav h2 {
         display: grid;
@@ -389,6 +384,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }  
     .link {
         text-align-last: right;
+    }
+    header, main, footer {
+        top: 75px;
     }
 }
 
