@@ -337,6 +337,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
+    body {
+        max-width: 834px;
+        margin: auto;
+    }
     nav, header, main, footer {
         width: 834px;
     }
@@ -365,25 +369,26 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         color: #ffffff;
         padding-top: 5px;
         padding-bottom: 5px;
+        text-align: center;
     }
     img {
         float: left;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     * {
         box-sizing: border-box;
     }
     #twocolumn {
         display:flex;
-       }
-
-    section p {
-       text-align-last: right;
+        flex-grow: 2;
     }
     nav h2 {
         display: grid;
         justify-content: left;
         left: 20px;
-    }
+    }  
+    .link {
+        text-align-last: right;
     }
 }
+
