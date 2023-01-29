@@ -75,7 +75,7 @@ main {
 }
 footer {
     position: relative;
-    top: 50px;
+    top: 80px;
 }
 nav h2 {
     font-size: 1.25em;
@@ -184,7 +184,7 @@ section a:hover {
 footer p {
     color: #590242;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 /* hamburger menu  
 ----------------------------------*/
@@ -322,24 +322,68 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 10px;
     text-align: center;
 }
+/*---------------------------------*/
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
         position: absolute;
-        top: 0;
+        top: 20px;
+        left: 250px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 80px;
+        text-align: center;
     }
     label span, input {
         display: none;
     }
-}
-@media screen and (min-width: 834px) {
-    body {
-        margin: ;
-    }
     nav, header, main, footer {
         width: 834px;
     }
+    .scrolltwo {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(5,1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 500px;
+    }
+    .scrollthree {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(5,1fr);
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 500px;
+    }
+    .scrolltwo h3 {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        text-align: center;
+    }
+    .scrollthree h3 {
+        color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    img {
+        float: left;
+        margin-right: 10px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    #twocolumn {
+        display:flex;
+       }
+
+    section p {
+       text-align-last: right;
+    }
+    nav h2 {
+        display: grid;
+        justify-content: left;
+        left: 20px;
+    }
+    }
 }
-    
