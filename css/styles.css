@@ -76,12 +76,6 @@ main {
 footer {
     position: relative;
     top: 80px;
-}
-nav h2 {
-    font-size: 1.25em;
-    text-align: center;
-    position: relative;
-    top: 25px;     
 } 
 nav {
     position: absolute;
@@ -97,6 +91,12 @@ nav a {
 nav a:hover {
     text-decoration: none;
     background-color: #590242;
+}
+nav h2 {
+    font-size: 1.25em;
+    text-align: center;
+    position: relative;
+    top: 25px;   
 } 
 h1 {
     font-size: 1.25em;
