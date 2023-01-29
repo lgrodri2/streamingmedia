@@ -241,7 +241,6 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-
 /* Custom Styled Scroll Bar 1
 -----------------------------------*/
 .scroll {
@@ -323,7 +322,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 10px;
     text-align: center;
 }
-
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
@@ -335,6 +333,12 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
+}
+
+
+/*Media queries
+------------------------------------*/
+@media screen and (min-width: 834px) {
     body {
         margin: ;
     }
