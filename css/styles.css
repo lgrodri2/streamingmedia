@@ -334,10 +334,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: none;
     }
 }
-
-
-/*Media queries
-------------------------------------*/
 @media screen and (min-width: 834px) {
     body {
         margin: ;
