@@ -59,22 +59,35 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
     max-width: 375px;
-    padding:10px;
     color:#ffffff;
 }
 header {
     background-image: linear-gradient(to right, #2104d9, #000000);
     position: relative;
-    top: 50px
+    top: 80px
     }
 main, footer {
     background-color: #ffffff;
 }
+main {
+    position: relative;
+    top: 80px;
+}
+footer {
+    position: relative;
+    top: 50px;
+}
+nav h2 {
+    font-size: 1.25em;
+    text-align: center;
+    position: relative;
+    top: 25px;     
+} 
 nav {
     position: absolute;
+    background-color: #030a8c;
+    min-width: 375px;
     top: 0;
-    width: 100%;
-
 }
 nav a {
     text-transform: uppercase;
@@ -84,7 +97,7 @@ nav a {
 nav a:hover {
     text-decoration: none;
     background-color: #590242;
-}    
+} 
 h1 {
     font-size: 1.25em;
     text-transform: uppercase;
@@ -102,7 +115,7 @@ footer p {
     font-size: .75em;
 }
 header h1, p {
-    padding: 5px 30px 25px 30px;
+    padding: 10px 30px 25px 30px;
 }
 header h1 {
     padding-bottom: 5px;
@@ -149,14 +162,13 @@ header p {
     line-height: 20px;
 }
 audio {
-    display: flex;
-    position: relative;
-    bottom: 55%;
-    padding-left: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 150px;
+    color: rgba(255,255,255,.75);
 }
 section a {
     margin-left: 30px;
-    margin-top: 10px;
     background-color: #590242;
     padding:10px 30px;
     border: 0;
@@ -230,19 +242,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-}
-
 /* Custom Styled Scroll Bar 1
 -----------------------------------*/
 .scroll {
@@ -264,6 +263,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     height: 60px;
     width: 350px;
 }
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
 #trending ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px #590242;
 }
@@ -273,8 +275,21 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 #trending ::-webkit-scrollbar-thumb:hover {
     background: #020659;
+} 
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+    width: 15px;
 }
-/* Scroll bar two
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 15px #020659;
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}   
+/* Scroll two
 ---------------------------------------*/
 .scrolltwo {
     display: grid;
@@ -291,17 +306,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 10px;
     text-align: center;
 }
-#playlists ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 15px #590242;
-}
-#playlists ::-webkit-scrollbar-thumb {
-    background: #590242;
-    border-radius: 5px;
-}
-#playlists ::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-}
-/* Scroll bar three
+/* Scroll three
 ---------------------------------------*/
 .scrollthree {
     display: grid;
@@ -318,5 +323,23 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 10px;
     text-align: center;
 }
-/*Media queries
-------------------------------------*/
+
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+    body {
+        margin: ;
+    }
+    nav, header, main, footer {
+        width: 834px;
+    }
+}
+    
