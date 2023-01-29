@@ -388,6 +388,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     header, main, footer {
         top: 75px;
     }
+    section br {
+        display: none;
+    }
 }
 
 
